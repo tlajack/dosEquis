@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - glTF loader</title>
+		<title>TLA Graphics - Dos Equis 3d</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
@@ -28,7 +28,7 @@
 				document.body.appendChild( container );
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
-				camera.position.set( - 1.8, 0.6, 2.7 );
+				camera.position.set( -1, 0.6, 2.7 );
 
 				scene = new THREE.Scene();
 
@@ -90,7 +90,7 @@
 				const controls = new OrbitControls( camera, renderer.domElement );
 				controls.addEventListener( 'change', render ); // use if there is no animation loop
 				controls.minDistance = .5;
-				controls.maxDistance = 10;
+				controls.maxDistance = 3;
 				controls.target.set( 0, 0, - 0.2 );
 				controls.update();
 
